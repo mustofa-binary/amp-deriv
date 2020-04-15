@@ -99,7 +99,12 @@ const Trade = () => {
                                 <amp-img src={DtraderIcon} width="72" height="72" />
                             </div>
                             <Box ml="1.6rem">
-                                <A as="h4" href="https://deriv.com/dtrader">
+                                <A
+                                    as="h4"
+                                    href="https://deriv.com/dtrader"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Dtrader
                                 </A>
                                 <Text weight="300">
@@ -119,7 +124,12 @@ const Trade = () => {
                                 <amp-img src={DbotIcon} width="72" height="72" />
                             </div>
                             <Box ml="1.6rem">
-                                <A as="h4" href="https://deriv.com/dbot">
+                                <A
+                                    as="h4"
+                                    href="https://deriv.com/dbot"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     DBot
                                 </A>
                                 <Text weight="300">
@@ -138,7 +148,12 @@ const Trade = () => {
                                 <amp-img src={Dmt5Icon} width="72" height="72" />
                             </div>
                             <Box ml="1.6rem">
-                                <A as="h4" href="https://deriv.com/dmt5">
+                                <A
+                                    as="h4"
+                                    href="https://deriv.com/dmt5"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     DMT5
                                 </A>
                                 <Text weight="300">

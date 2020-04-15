@@ -67,7 +67,13 @@ const Hero = () => {
                         24x7 trading, sharp prices, tight spreads
                     </Text>
                 </Flex>
-                <LinkButton primary href="https://deriv.com/signup" mt="3.2rem">
+                <LinkButton
+                    primary
+                    href="https://deriv.com/signup"
+                    mt="3.2rem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Create free demo account
                 </LinkButton>
             </FullWidth>
