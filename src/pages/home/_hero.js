@@ -37,7 +37,7 @@ const FullWidth = styled(Container)`
 const Hero = () => {
     return (
         <HandleAmp bg="var(--color-black)" position="relative">
-            <amp-video width="100vw" height="82.7rem" autoplay loop>
+            <amp-video width="100vw" height="82.7rem" autoplay="" loop="">
                 <source src={PlatformVideoMp4} type="video/mp4" />
             </amp-video>
             <FullWidth position="relative" justifyContent="center" flexDirection="column">
