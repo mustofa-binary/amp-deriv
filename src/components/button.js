@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { space } from 'styled-system'
 
 const SharedButtonStyle = css`
+    display: block;
     border-radius: 6px;
     padding: 1rem 1.6rem;
     font-size: 1.4rem;

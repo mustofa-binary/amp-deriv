@@ -45,7 +45,7 @@ module.exports = {
                     },
                 },
                 canonicalBaseUrl: 'http://amp-deriv.netlify.com/',
-                components: ['amp-video'],
+                components: ['amp-video', 'amp-carousel'],
                 pathIdentifier: '/',
                 relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
                 useAmpClientIdApi: true,
