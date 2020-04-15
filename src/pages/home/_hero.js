@@ -11,21 +11,14 @@ const HandleAmp = styled(Box)`
     width: 100%;
     height: 82.7rem;
 
-    & > .amp-video {
+    & > amp-video {
         position: absolute;
         top: 0;
         left: 0;
+        opacity: 0.25;
 
         & > video {
             object-fit: fill;
-        }
-        &::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: var(--color-black);
-            opacity: 0.75;
         }
     }
 
@@ -44,15 +37,10 @@ const FullWidth = styled(Container)`
 const Hero = () => {
     return (
         <HandleAmp bg="var(--color-black)" position="relative">
-            <amp-video width='100%' height='100%' class="amp-video" autoplay loop>
+            <amp-video width="100vw" height="82.7rem" autoplay loop>
                 <source src={PlatformVideoMp4} type="video/mp4" />
             </amp-video>
-            <FullWidth
-                position="relative"
-                justifyContent="center"
-                height="100%"
-                flexDirection="column"
-            >
+            <FullWidth position="relative" justifyContent="center" flexDirection="column">
                 <Header as="h1" mb="2.4rem" size="var(--text-size-xl)" lh="1.25">
                     Simple. Flexible. Reliable.
                 </Header>
