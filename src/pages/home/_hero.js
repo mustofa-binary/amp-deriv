@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Container from 'components/container'
 import Box from 'components/box'
 import Flex from 'components/flex'
+import { LinkButton } from 'components/button'
 import { Text, Header } from 'components/typography'
 import PlatformVideoMp4 from 'assets/videos/Deriv_platform_tour.mp4'
 import CheckIcon from 'assets/svg/checklist.svg'
@@ -36,7 +37,7 @@ const FullWidth = styled(Container)`
 
 const Hero = () => {
     return (
-        <HandleAmp bg="var(--color-black)" position="relative">
+        <HandleAmp bg="var(--color-black)" position="relative" p="8rem 0">
             <amp-video width="100vw" height="82.7rem" autoplay="" loop="">
                 <source src={PlatformVideoMp4} type="video/mp4" />
             </amp-video>
@@ -66,6 +67,9 @@ const Hero = () => {
                         24x7 trading, sharp prices, tight spreads
                     </Text>
                 </Flex>
+                <LinkButton primary href="https://deriv.com/signup" mt="3.2rem">
+                    Create free demo account
+                </LinkButton>
             </FullWidth>
         </HandleAmp>
     )
