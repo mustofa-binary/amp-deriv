@@ -88,6 +88,8 @@ const Trade = () => {
                     </FullWidth>
                     <FullWidth maxWidth="38.4rem">
                         <Card
+                            role="button"
+                            tabindex="-1"
                             alignItems="center"
                             mb="2.4rem"
                             on="tap:carousel-with-preview.goToSlide(index=0)"
@@ -106,6 +108,8 @@ const Trade = () => {
                             </Box>
                         </Card>
                         <Card
+                            role="button"
+                            tabindex="-1"
                             alignItems="center"
                             mb="2.4rem"
                             on="tap:carousel-with-preview.goToSlide(index=1)"
@@ -124,6 +128,8 @@ const Trade = () => {
                             </Box>
                         </Card>
                         <Card
+                            role="button"
+                            tabindex="-1"
                             alignItems="center"
                             on="tap:carousel-with-preview.goToSlide(index=2)"
                             hover="rgba(133, 172, 176, 0.02)"
