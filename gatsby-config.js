@@ -27,6 +27,29 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-amp`,
+      options: {
+        analytics: {
+          type: 'gtag',
+          dataCredentials: 'include',
+          config: {
+            vars: {
+              gtag_id: 'UA-139927388-1',
+              config: {
+                'UA-139927388-1': {
+                  page_location: '{{pathname}}'
+                },
+              },
+            },
+          },
+        },
+        canonicalBaseUrl: 'http://amp-deriv.netlify.com/',
+        pathIdentifier: '/',
+        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        useAmpClientIdApi: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
