@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = () => <header>test header</header>
+const Footer = () => <footer>test footer</footer>
 
-Header.propTypes = {
+Footer.propTypes = {
     siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Footer.defaultProps = {
     siteTitle: ``,
 }
 
-export default Header
+export default Footer
