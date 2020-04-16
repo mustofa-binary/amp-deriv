@@ -41,6 +41,10 @@ const Divider = styled.div`
     background: var(--color-grey-2);
 `
 
+const FullWidth = styled.div`
+    width: 100%;
+`
+
 const OurClients = () => {
     return (
         <Box p="8rem 0" bg="white">
@@ -48,7 +52,7 @@ const OurClients = () => {
                 <Header as="h2" mb="2.2rem" align="center">
                     What our clients say about Deriv
                 </Header>
-                <amp-layout width="78.8rem" height="22rem">
+                <FullWidth>
                     <amp-carousel
                         id="our-clients-carousel"
                         width="78.8rem"
@@ -127,7 +131,7 @@ const OurClients = () => {
                             </Wrapper>
                         </ClientCard>
                     </amp-carousel>
-                </amp-layout>
+                </FullWidth>
             </Container>
         </Box>
     )

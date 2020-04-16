@@ -27,6 +27,9 @@ const GlobalStyle = createGlobalStyle`
         @media ${device.tabletL} {
             font-size: 58%; /* 1rem = 8px */
         }
+        @media ${device.mobileL} {
+            font-size: 50%; /* 1rem = 8px */
+        }
     }
     body {
         font-family: 'IBM Plex Sans', sans-serif;

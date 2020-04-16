@@ -25,7 +25,6 @@ const float = keyframes`
 
 const HandleAmp = styled(Box)`
     width: 100%;
-    height: 82.7rem;
 
     ${Header} {
         color: white;
@@ -37,23 +36,24 @@ const HandleAmp = styled(Box)`
 
 const FullWidth = styled(Container)`
     height: 100%;
+    min-height: 58.7rem;
 
-    & > div > amp-img {
+    & > amp-img {
         animation: ${float} 3s ease-in-out infinite;
     }
 `
 
 const Hero = () => {
     return (
-        <HandleAmp bg="var(--color-black)" position="relative" p="8rem 0">
+        <HandleAmp bg="var(--color-black)" position="relative" p="12rem 0">
             <FullWidth
                 position="relative"
-                justifyContent="center"
+                justifyContent="space-between"
                 alignItems="center"
                 flexDirection="row"
-                flexWrap="wrap"
+                flexWrap="wrap-reverse"
             >
-                <Box mr="5rem">
+                <Box mt="3.2rem">
                     <Header as="h1" mb="2.4rem" size="var(--text-size-xl)" lh="1.25">
                         Simple. Flexible. Reliable.
                     </Header>
@@ -89,9 +89,7 @@ const Hero = () => {
                         Create free demo account
                     </LinkButton>
                 </Box>
-                <div>
-                    <amp-img src={HeroImg} width="52rem" height="30rem" />
-                </div>
+                <amp-img src={HeroImg} width="52rem" height="30rem" />
             </FullWidth>
 
             {/* <amp-video width="100vw" height="82.7rem" autoplay="" loop="">
