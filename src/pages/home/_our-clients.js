@@ -4,6 +4,9 @@ import Box from 'components/box'
 import Flex from 'components/flex'
 import Container from 'components/container'
 import { Text, Header } from 'components/typography'
+import Paul from 'assets/images/our-clients-3.png'
+import Fabio from 'assets/images/our-clients-2.png'
+import Roberto from 'assets/images/our-clients-1.png'
 
 const Wrapper = styled(Flex)`
     max-width: 58.2rem;
@@ -45,7 +48,7 @@ const OurClients = () => {
                 <Header as="h2" mb="2.2rem" align="center">
                     What our clients say about Deriv
                 </Header>
-                <amp-layout width="78.8rem" height="17.2rem">
+                <amp-layout width="78.8rem" height="22rem">
                     <amp-carousel
                         id="our-clients-carousel"
                         width="78.8rem"
@@ -65,40 +68,62 @@ const OurClients = () => {
                                     already have a known truck of good ethics.
                                 </Text>
                                 <Divider />
-                                <Text weight="bold" mb="0.4rem">
-                                    Paul Mugenda
-                                </Text>
-                                <Text>Forex trader</Text>
+                                <Flex>
+                                    <div>
+                                        <amp-img src={Paul} width="50" height="50" />
+                                    </div>
+                                    <Box ml="0.8rem">
+                                        <Text weight="bold" mb="0.4rem">
+                                            Paul Mugenda
+                                        </Text>
+                                        <Text size="var(--text-size-xs)">Forex trader</Text>
+                                    </Box>
+                                </Flex>
                             </Wrapper>
                         </ClientCard>
                         <ClientCard>
                             <Wrapper>
                                 <Text mb="3.2rem">
-                                    Customer service support very awesome and first to respond to
-                                    queries and helping on marketing part. No much struggle
-                                    introducing new members to binary.com since the company name
-                                    already have a known truck of good ethics.
+                                    It surpassed my expectations. Binary got it right with Deriv.
+                                    Trading on the platform is excellent and it allows for making
+                                    accurate graphical analyses of the market and adding support and
+                                    resistance markings with the use of horizontal lines, RSI, FIBO
+                                    and much more.
                                 </Text>
                                 <Divider />
-                                <Text weight="bold" mb="0.4rem">
-                                    Paul Mugenda
-                                </Text>
-                                <Text>Forex trader</Text>
+                                <Flex>
+                                    <div>
+                                        <amp-img src={Fabio} width="50" height="50" />
+                                    </div>
+                                    <Box ml="0.8rem">
+                                        <Text weight="bold" mb="0.4rem">
+                                            Fábio Oliveira
+                                        </Text>
+                                        <Text size="var(--text-size-xs)">
+                                            CEO - Bitcoin Informer
+                                        </Text>
+                                    </Box>
+                                </Flex>
                             </Wrapper>
                         </ClientCard>
                         <ClientCard>
                             <Wrapper>
                                 <Text mb="3.2rem">
-                                    Customer service support very awesome and first to respond to
-                                    queries and helping on marketing part. No much struggle
-                                    introducing new members to binary.com since the company name
-                                    already have a known truck of good ethics.
+                                    I am very excited about all the technology involved in Deriv.com
+                                    — an intuitive and optimised platform.
                                 </Text>
                                 <Divider />
-                                <Text weight="bold" mb="0.4rem">
-                                    Paul Mugenda
-                                </Text>
-                                <Text>Forex trader</Text>
+                                <Flex justifyContent="center" alignItems="center">
+                                    <div>
+                                        <amp-img src={Roberto} width="50" height="50" />
+                                    </div>
+                                    <Box ml="0.8rem">
+                                        <Text weight="bold" mb="0.4rem">
+                                            Roberto Arcanjo
+                                        </Text>
+                                        <Text size="var(--text-size-xs)">CEO - Mercado Trader</Text>
+                                    </Box>
+                                </Flex>
                             </Wrapper>
                         </ClientCard>
                     </amp-carousel>
