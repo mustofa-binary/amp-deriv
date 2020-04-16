@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `Deriv`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        description: `Deriv.com gives everyone an easy way to participate in the financial markets. Trade with as little as $1 USD on major currencies, stocks, indices, and commodities.`,
         author: `@gatsbyjs`,
     },
     plugins: [
