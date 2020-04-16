@@ -18,8 +18,8 @@ const Wrapper = styled(Flex)`
 `
 
 const ClientCard = styled.div`
-    width: 78.8rem;
-    height: 22rem;
+    width: 788px;
+    height: 220px;
     padding: 1.8rem 0 0;
     position: relative;
 
@@ -43,6 +43,10 @@ const Divider = styled.div`
 
 const FullWidth = styled.div`
     width: 100%;
+
+    & > amp-carousel {
+        height: 220px;
+    }
 `
 
 const OurClients = () => {
@@ -55,8 +59,8 @@ const OurClients = () => {
                 <FullWidth>
                     <amp-carousel
                         id="our-clients-carousel"
-                        width="78.8rem"
-                        height="22rem"
+                        width="788px"
+                        height="220px"
                         layout="responsive"
                         type="slides"
                         autoplay=""
