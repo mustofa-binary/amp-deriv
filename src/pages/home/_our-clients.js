@@ -65,7 +65,7 @@ const OurClients = () => {
                     >
                         <ClientCard>
                             <Wrapper>
-                                <Text mb="3.2rem">
+                                <Text mb="3.2rem" align="center">
                                     Customer service support very awesome and first to respond to
                                     queries and helping on marketing part. No much struggle
                                     introducing new members to binary.com since the company name
@@ -87,7 +87,7 @@ const OurClients = () => {
                         </ClientCard>
                         <ClientCard>
                             <Wrapper>
-                                <Text mb="3.2rem">
+                                <Text mb="3.2rem" align="center">
                                     It surpassed my expectations. Binary got it right with Deriv.
                                     Trading on the platform is excellent and it allows for making
                                     accurate graphical analyses of the market and adding support and
@@ -112,7 +112,7 @@ const OurClients = () => {
                         </ClientCard>
                         <ClientCard>
                             <Wrapper>
-                                <Text mb="3.2rem">
+                                <Text mb="3.2rem" align="center">
                                     I am very excited about all the technology involved in Deriv.com
                                     — an intuitive and optimised platform.
                                 </Text>
