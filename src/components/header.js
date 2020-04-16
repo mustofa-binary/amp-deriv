@@ -41,12 +41,21 @@ const LinkText = styled(AnchorLink)`
     }
 `
 
+const BlackLink = styled(LinkText)`
+    color: var(--color-black);
+    margin: 1.6rem 0;
+`
+
 const Binary = styled(Text)`
     width: 80px;
     margin-left: 0.5rem;
     line-height: 1;
     color: white;
     font-size: var(--text-size-xxs);
+
+    @media ${device.mobileS} {
+        display: none;
+    }
 `
 
 const BinaryLink = styled.a`
@@ -98,23 +107,18 @@ const Header = () => (
                 </HamburgerMenu>
             </Container>
         </HeaderWrapper>
-        <amp-sidebar id="sidebar1" side="left">
-            <ul>
-                <li>Nav item 1</li>
-                <li>
-                    <a href="#idTwo" on="tap:idTwo.scrollTo">
-                        Nav item 2
-                    </a>
-                </li>
-                <li>Nav item 3</li>
-                <li>
-                    <a href="#idFour" on="tap:idFour.scrollTo">
-                        Nav item 4
-                    </a>
-                </li>
-                <li>Nav item 5</li>
-                <li>Nav item 6</li>
-            </ul>
+        <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+            <Flex
+                alignItems="flex-start"
+                justifyContent="center"
+                p="2rem 2rem"
+                flexDirection="column"
+            >
+                <BlackLink to="/#trade">Trade</BlackLink>
+                <BlackLink to="/#markets">Markets</BlackLink>
+                <BlackLink to="/#simple-steps">Tutorial</BlackLink>
+                <BlackLink to="/#our-clients">Testimonials</BlackLink>
+            </Flex>
         </amp-sidebar>
     </>
 )
