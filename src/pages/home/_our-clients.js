@@ -47,7 +47,7 @@ const FullWidth = styled.div`
 
 const OurClients = () => {
     return (
-        <Box p="8rem 0" bg="white">
+        <Box p="8rem 0" bg="white" id="our-clients">
             <Container flexDirection="column" alignItems="center">
                 <Header as="h2" mb="2.2rem" align="center">
                     What our clients say about Deriv

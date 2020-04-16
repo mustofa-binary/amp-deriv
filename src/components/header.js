@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import Container from 'components/container'
 import Flex from 'components/flex'
 import { Text } from 'components/typography'
@@ -16,7 +16,7 @@ const HeaderWrapper = styled.header`
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
 `
 
-const LinkText = styled(Link)`
+const LinkText = styled(AnchorLink)`
     font-size: var(--text-size-s);
     color: var(--color-white);
     text-decoration: none;
@@ -54,9 +54,9 @@ const Header = () => (
     <HeaderWrapper>
         <Container justifyContent="space-between">
             <Flex alignItems="center" justifyContent="center">
-                <Link to="/">
+                <AnchorLink to="/">
                     <amp-img src={Deriv} width="212" height="27" />
-                </Link>
+                </AnchorLink>
                 <Binary>
                     A{' '}
                     <BinaryLink href="https://binary.com" target="_blank" rel="noopener noreferrer">
@@ -66,10 +66,10 @@ const Header = () => (
                 </Binary>
             </Flex>
             <Flex alignItems="center" justifyContent="center">
-                <LinkText>Trade</LinkText>
-                <LinkText>Markets</LinkText>
-                <LinkText>Tutorial</LinkText>
-                <LinkText>Testimonials</LinkText>
+                <LinkText to="/#trade">Trade</LinkText>
+                <LinkText to="/#markets">Markets</LinkText>
+                <LinkText to="/#simple-steps">Tutorial</LinkText>
+                <LinkText to="/#our-clients">Testimonials</LinkText>
             </Flex>
         </Container>
     </HeaderWrapper>

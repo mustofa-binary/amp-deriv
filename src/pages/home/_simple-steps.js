@@ -34,7 +34,7 @@ const Li = styled(Flex).attrs({ as: 'li' })`
 
 const SimpleSteps = () => {
     return (
-        <HandleAmp p="8rem 0">
+        <HandleAmp p="8rem 0" id="simple-steps">
             <Container flexDirection="column" alignItems="center">
                 <Header as="h2" align="center" mb="4rem">
                     3 simple steps
