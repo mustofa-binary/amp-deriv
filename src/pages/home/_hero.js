@@ -53,7 +53,7 @@ const Hero = () => {
                 flexDirection="row"
                 flexWrap="wrap"
             >
-                <Box mr="3.2rem">
+                <Box mr="5rem">
                     <Header as="h1" mb="2.4rem" size="var(--text-size-xl)" lh="1.25">
                         Simple. Flexible. Reliable.
                     </Header>
