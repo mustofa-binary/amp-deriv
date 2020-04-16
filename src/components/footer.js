@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Container from 'components/container'
 import Box from 'components/box'
 import Flex from 'components/flex'
-import { Text } from 'components/typography'
+import { Text, LinkText } from 'components/typography'
 import Warning from 'assets/svg/warning.svg'
 
 const FooterWrapper = styled.footer`
@@ -24,18 +24,53 @@ const Footer = () => (
                     In the EU, financial products are offered by Binary Investments (Europe) Ltd, W
                     Business Centre, Level 3, Triq Dun Karm, Birkirkara, BKR 9033, Malta, regulated
                     as a Category 3 Investment Services provider by the Malta Financial Services
-                    Authority (view licence).
+                    Authority (
+                    <LinkText
+                        href="https://deriv.com/WS-Binary-Investments-Europe-Limited.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        weight="bold"
+                    >
+                        view licence
+                    </LinkText>
+                    ).
                 </Text>
                 <Text>
                     Outside the EU, financial products are offered by Binary (SVG) Ltd, Hinds
                     Building, Kingstown, St Vincent and the Grenadines; Binary (V) Ltd, Govant
                     Building, Port Vila, P.O. Box 1276, Vanuatu, regulated by the Vanuatu Financial
-                    Services Commission (view licence); Binary (BVI) Ltd, Kingston Chambers, P.O.
-                    Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British
-                    Virgin Islands Financial Services Commission (view licence); and Binary (FX)
-                    Ltd, Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan,
-                    Malaysia, regulated by the Labuan Financial Services Authority to carry on a
-                    money-broking business (view licence).
+                    Services Commission (
+                    <LinkText
+                        href="https://deriv.com/Vanuatu-Financial-Services-Commission.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        weight="bold"
+                    >
+                        view licence
+                    </LinkText>
+                    ); Binary (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola,
+                    British Virgin Islands, regulated by the British Virgin Islands Financial
+                    Services Commission (
+                    <LinkText
+                        href="https://deriv.com/BVI_license.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        weight="bold"
+                    >
+                        view licence
+                    </LinkText>
+                    ); and Binary (FX) Ltd, Lot No. F16, First Floor, Paragon Labuan, Jalan Tun
+                    Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services
+                    Authority to carry on a money-broking business (
+                    <LinkText
+                        href="https://deriv.com/Labuan-license.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        weight="bold"
+                    >
+                        view licence
+                    </LinkText>
+                    ).
                 </Text>
                 <Text mt="0.8rem">
                     This website's services are not made available in certain countries including
@@ -56,7 +91,16 @@ const Footer = () => (
                     investors because of the risk of losing all of your invested capital. You should
                     never invest money that you cannot afford to lose, and never trade with borrowed
                     money. Before trading in the complex financial products offered, please be sure
-                    to understand the risks involved and learn about Secure and responsible trading.
+                    to understand the risks involved and learn about{' '}
+                    <LinkText
+                        href="https://deriv.com/responsible-trading/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        weight="bold"
+                    >
+                        Secure and responsible trading
+                    </LinkText>
+                    .
                 </Text>
             </Container>
         </FooterWrapper>
