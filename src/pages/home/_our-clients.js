@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Box from 'components/box'
 import Flex from 'components/flex'
 import Container from 'components/container'
-import { Text, Header, LinkText } from 'components/typography'
+import { Text, Header } from 'components/typography'
 
 const Wrapper = styled(Flex)`
     max-width: 58.2rem;
