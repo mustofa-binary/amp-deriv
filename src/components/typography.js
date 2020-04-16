@@ -17,7 +17,7 @@ const BaseElement = css`
 `
 export const Text = styled.p`
     ${BaseElement}
-    font-weight: ${props => props.weight || 'normal'};
+    font-weight: ${props => props.weight || '300'};
     font-size: ${props => props.size || 'var(--text-size-s)'};
     width:  ${props => props.width || 'auto'};
 `

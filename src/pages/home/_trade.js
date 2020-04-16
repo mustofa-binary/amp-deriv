@@ -15,6 +15,10 @@ const FullWidth = styled(Box)`
     width: 100%;
 `
 
+const Gradient = styled(Box)`
+    background-image: linear-gradient(var(--color-grey-2), #ffffff);
+`
+
 const A = styled(LinkText)`
     font-size: var(--text-size-m);
     font-weight: bold;
@@ -36,7 +40,7 @@ const Card = styled(Flex)`
 
 const Trade = () => {
     return (
-        <Box p="8rem 0" bg="var(--color-grey-2)">
+        <Gradient p="8rem 0">
             <Container flexDirection="column">
                 <Header as="h2" align="center" mb="1.2rem">
                     Trade the way you like
@@ -164,7 +168,7 @@ const Trade = () => {
                     </FullWidth>
                 </Flex>
             </Container>
-        </Box>
+        </Gradient>
     )
 }
 
