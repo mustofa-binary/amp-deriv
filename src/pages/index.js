@@ -5,6 +5,7 @@ import Hero from './home/_hero'
 import Trade from './home/_trade'
 import Markets from './home/_markets'
 import SimpleSteps from './home/_simple-steps'
+import OurClients from './home/_our-clients'
 
 const IndexPage = () => (
     <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
         <Trade />
         <Markets />
         <SimpleSteps />
+        <OurClients />
     </Layout>
 )
 
