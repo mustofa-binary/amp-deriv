@@ -62,7 +62,7 @@ const Footer = () => (
         </FooterWrapper>
         <Box bg="var(--color-black)">
             <Container p="1.6rem 0">
-                <White color="white">&copy; 2020 Deriv | All rights reserved</White>
+                <White>&copy; 2020 Deriv | All rights reserved</White>
             </Container>
         </Box>
     </>

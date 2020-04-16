@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import GlobalStyle from 'themes/global-style'
-// import Header from './header'
+import Header from './header'
 import Footer from './footer'
 
 const Layout = ({ children }) => {
     return (
         <>
             <GlobalStyle />
-            {/* <Header /> */}
+            <Header />
             <main>{children}</main>
             <Footer />
         </>
