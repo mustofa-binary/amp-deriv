@@ -1,7 +1,19 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import Traffic from './src/utils/traffic'
 
-// You can delete this file if you're not using it
+const is_browser = typeof window !== 'undefined'
+
+export const onInitialClientRender = () => {
+    if (is_browser) {
+        Traffic.setData()
+        Traffic.setAffiliateData()
+
+        const isMobile = () =>
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent,
+            )
+
+        if (!localStorage.getItem('signup_device')) {
+            localStorage.setItem('signup_device', isMobile() ? 'mobile' : 'desktop')
+        }
+    }
+}

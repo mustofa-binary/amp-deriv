@@ -5,6 +5,7 @@ import Container from 'components/container'
 import Flex from 'components/flex'
 import { Text, Header } from 'components/typography'
 import { LinkButton } from 'components/button'
+import signupUrl from 'utils/signup-url'
 import SimpleStepsBG from 'assets/images/simple-steps.png'
 import SimpleStepIcon1 from 'assets/svg/simple-steps-1.svg'
 import SimpleStepIcon2 from 'assets/svg/simple-steps-2.svg'
@@ -72,7 +73,7 @@ const SimpleSteps = () => {
                     </Li>
                 </Ul>
                 <LinkButton
-                    href="https://deriv.com/signup"
+                    href={signupUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
                     primary

@@ -5,6 +5,7 @@ import Box from 'components/box'
 import Flex from 'components/flex'
 import { LinkButton } from 'components/button'
 import { Text, Header } from 'components/typography'
+import signupUrl from 'utils/signup-url'
 import HeroImg from 'assets/images/hero-image.png'
 import CheckIcon from 'assets/svg/checklist.svg'
 
@@ -81,7 +82,7 @@ const Hero = () => {
                     </Flex>
                     <LinkButton
                         primary
-                        href="https://deriv.com/signup"
+                        href={signupUrl()}
                         mt="3.2rem"
                         target="_blank"
                         rel="noopener noreferrer"
