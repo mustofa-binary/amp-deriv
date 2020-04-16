@@ -12,6 +12,10 @@ const FooterWrapper = styled.footer`
     border-top: 1px solid var(--color-red);
 `
 
+const White = styled(Text)`
+    color: white;
+`
+
 const Footer = () => (
     <>
         <FooterWrapper>
@@ -58,7 +62,7 @@ const Footer = () => (
         </FooterWrapper>
         <Box bg="var(--color-black)">
             <Container p="1.6rem 0">
-                <Text color="white">&copy; 2020 Deriv | All rights reserved</Text>
+                <White color="white">&copy; 2020 Deriv | All rights reserved</White>
             </Container>
         </Box>
     </>
