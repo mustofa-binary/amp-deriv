@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import Container from 'components/container'
 import Flex from 'components/flex'
@@ -81,9 +82,9 @@ const Header = () => (
         <HeaderWrapper>
             <Container justifyContent="space-between">
                 <Flex alignItems="center" justifyContent="center">
-                    <AnchorLink to="/">
+                    <Link to="/">
                         <amp-img src={Deriv} width="212" height="27" />
-                    </AnchorLink>
+                    </Link>
                     <Binary>
                         A{' '}
                         <BinaryLink
