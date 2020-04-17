@@ -5,6 +5,7 @@ import Container from 'components/container'
 import Flex from 'components/flex'
 import { Text, Header } from 'components/typography'
 import { LinkButton } from 'components/button'
+import device from 'themes/device'
 import signupUrl from 'utils/signup-url'
 import SimpleStepsBG from 'assets/images/simple-steps.png'
 import SimpleStepIcon1 from 'assets/svg/simple-steps-1.svg'
@@ -19,6 +20,7 @@ const HandleAmp = styled(Box)`
 const Ul = styled(Flex).attrs({ as: 'ul' })`
     max-width: 996px;
     flex-wrap: wrap;
+    justify-content: center;
 `
 
 const Li = styled(Flex).attrs({ as: 'li' })`
@@ -31,6 +33,10 @@ const Li = styled(Flex).attrs({ as: 'li' })`
     height: 204px;
     background: var(--color-white);
     flex-direction: column;
+
+    @media ${device.tabletL} {
+        height: auto;
+    }
 `
 
 const SimpleSteps = () => {

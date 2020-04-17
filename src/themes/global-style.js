@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
         @media ${device.mobileL} {
             font-size: 50%; /* 1rem = 8px */
         }
+        @media ${device.mobileS} {
+            font-size: 45%;
+        }
     }
     body {
         font-family: 'IBM Plex Sans', sans-serif;

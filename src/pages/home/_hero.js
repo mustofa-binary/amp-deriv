@@ -62,6 +62,9 @@ const FullWidth = styled(Container)`
     min-height: 58.7rem;
     margin-bottom: 2.4rem;
 
+    & > * {
+        margin: 1rem;
+    }
     & > amp-img {
         animation: ${float} 3s ease-in-out infinite;
 
