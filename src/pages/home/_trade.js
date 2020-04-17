@@ -40,7 +40,7 @@ const Card = styled(Flex)`
 
 const Trade = () => {
     return (
-        <Gradient p="8rem 0" id="trade">
+        <Gradient p="8rem 0 1.6rem" id="trade">
             <Container flexDirection="column">
                 <Header as="h2" align="center" mb="1.2rem">
                     Trade the way you like

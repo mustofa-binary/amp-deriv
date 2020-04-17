@@ -99,7 +99,6 @@ const Header = () => (
                 <LinkWrapper alignItems="center" justifyContent="center">
                     <LinkText to="/#trade">Trade</LinkText>
                     <LinkText to="/#markets">Markets</LinkText>
-                    <LinkText to="/#simple-steps">Tutorial</LinkText>
                     <LinkText to="/#our-clients">Testimonials</LinkText>
                 </LinkWrapper>
                 <HamburgerMenu on="tap:sidebar1.toggle">
@@ -116,7 +115,6 @@ const Header = () => (
             >
                 <BlackLink to="/#trade">Trade</BlackLink>
                 <BlackLink to="/#markets">Markets</BlackLink>
-                <BlackLink to="/#simple-steps">Tutorial</BlackLink>
                 <BlackLink to="/#our-clients">Testimonials</BlackLink>
             </Flex>
         </amp-sidebar>

@@ -22,7 +22,7 @@ const Li = styled(Flex).attrs({ as: 'li' })`
 
 const Markets = () => {
     return (
-        <Box p="8rem 0" bg="var(--color-white)" id="markets">
+        <Box p="8rem 0 1.6rem" bg="var(--color-white)" id="markets">
             <Container flexDirection="column" alignItems="center">
                 <Header as="h2" align="center" mb="4rem">
                     Markets
