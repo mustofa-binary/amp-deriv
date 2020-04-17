@@ -28,7 +28,7 @@ const HamburgerMenu = styled.button`
 `
 
 const LinkText = styled(AnchorLink)`
-    font-size: var(--text-size-s);
+    font-size: var(--text-size-sm);
     color: var(--color-white);
     text-decoration: none;
     letter-spacing: 0.1rem;

@@ -15,9 +15,9 @@ const BigButton = styled(LinkButton)`
     padding: 1.6rem 2.4rem;
     font-size: 2rem;
     position: relative;
-    font-weight: 300;
+    font-weight: normal;
     letter-spacing: 0.1rem;
-    margin: 0 auto;
+    margin: 2rem auto 0;
 `
 
 const HandleAmp = styled(Box)`
@@ -26,7 +26,11 @@ const HandleAmp = styled(Box)`
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
+    height: 100vh;
     padding: 14rem 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &::before {
         content: '';
@@ -46,7 +50,6 @@ const HandleAmp = styled(Box)`
 `
 
 const FullWidth = styled(Container)`
-    height: 100%;
     width: 100%;
     margin-bottom: 2.4rem;
 

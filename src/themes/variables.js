@@ -34,7 +34,7 @@ const Variables = css`
         --text-size-xxs: 1.2rem;
         --text-size-xs: 1.4rem;
         --text-size-s: 1.6rem;
-        --text-size-sm: 2rem;
+        --text-size-sm: 1.8rem;
         --text-size-m: 2.4rem;
         --text-size-l: 3.2rem;
         --text-size-xl: 4.8rem;
