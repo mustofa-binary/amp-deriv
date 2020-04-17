@@ -7,26 +7,28 @@ import { LinkButton } from 'components/button'
 import { Text, Header } from 'components/typography'
 import signupUrl from 'utils/signup-url'
 import HeroImg from 'assets/images/hero-image.jpg'
+import HeroPlatform from 'assets/images/hero-platform.png'
 import CheckIcon from 'assets/svg/checklist.svg'
 
 const float = keyframes`
     0% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
+		transform: translatey(15px);
     }
     50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
+		transform: translatey(40px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
+		transform: translatey(15px);
 	}
 `
 
 const BigButton = styled(LinkButton)`
     padding: 1.6rem 2.4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    position: relative;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin: 0 auto;
 `
 
 const HandleAmp = styled(Box)`
@@ -99,17 +101,13 @@ const Hero = () => {
                             24x7 trading, sharp prices, tight spreads
                         </Text>
                     </Flex>
-                    <BigButton
-                        primary
-                        href={signupUrl()}
-                        mt="3.2rem"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Create free demo account
-                    </BigButton>
                 </Box>
+                <amp-img src={HeroPlatform} width="540" height="345" />
             </FullWidth>
+
+            <BigButton primary href={signupUrl()} target="_blank" rel="noopener noreferrer">
+                Create free demo account
+            </BigButton>
 
             {/* <amp-video width="100vw" height="82.7rem" autoplay="" loop="">
                 <source src={PlatformVideoMp4} type="video/mp4" />
