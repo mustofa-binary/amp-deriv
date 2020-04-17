@@ -5,6 +5,7 @@ import Box from 'components/box'
 import Flex from 'components/flex'
 import { LinkButton } from 'components/button'
 import { Text, Header } from 'components/typography'
+import device from 'themes/device'
 import signupUrl from 'utils/signup-url'
 import HeroImg from 'assets/images/hero-image.jpg'
 import HeroPlatform from 'assets/images/hero-platform.png'
@@ -59,9 +60,14 @@ const FullWidth = styled(Container)`
     height: 100%;
     width: 100%;
     min-height: 58.7rem;
+    margin-bottom: 2.4rem;
 
     & > amp-img {
         animation: ${float} 3s ease-in-out infinite;
+
+        @media ${device.tabletS} {
+            display: none;
+        }
     }
 `
 
@@ -70,7 +76,7 @@ const Hero = () => {
         <HandleAmp bg="var(--color-black)" position="relative" p="12rem 0">
             <FullWidth
                 position="relative"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
                 flexDirection="row"
                 flexWrap="wrap-reverse"
