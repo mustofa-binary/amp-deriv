@@ -9,7 +9,10 @@ import OurClients from './home/_our-clients'
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Home" />
+        <SEO
+            title="Online trading platform | Forex, commodities and indices"
+            description="Deriv - An online trading platform that offers a wide selection of derivatives to trade on 24/7."
+        />
         <Hero />
         <Trade />
         <Markets />
