@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import Container from 'components/container'
 import Flex from 'components/flex'
 import { Text } from 'components/typography'
@@ -28,7 +27,7 @@ const HamburgerMenu = styled.button`
     }
 `
 
-const LinkText = styled(AnchorLink)`
+const LinkText = styled(Link)`
     font-size: var(--text-size-sm);
     color: var(--color-white);
     text-decoration: none;
@@ -98,9 +97,15 @@ const Header = () => (
                     </Binary>
                 </Flex>
                 <LinkWrapper alignItems="center" justifyContent="center">
-                    <LinkText to="/#trade">Trade</LinkText>
-                    <LinkText to="/#markets">Markets</LinkText>
-                    <LinkText to="/#our-clients">Testimonials</LinkText>
+                    <LinkText to="/#trade" on="tap:trade.scrollTo()">
+                        Trade
+                    </LinkText>
+                    <LinkText to="/#markets" on="tap:markets.scrollTo()">
+                        Markets
+                    </LinkText>
+                    <LinkText to="/#our-clients" on="tap:our-clients.scrollTo()">
+                        Testimonials
+                    </LinkText>
                 </LinkWrapper>
                 <HamburgerMenu on="tap:sidebar1.toggle">
                     <amp-img src={Hamburger} width="18" height="16" />

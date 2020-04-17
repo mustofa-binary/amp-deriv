@@ -45,19 +45,19 @@ module.exports = {
                     },
                 },
                 canonicalBaseUrl: 'https://deriv.com/',
-                components: ['amp-video', 'amp-carousel', 'amp-sidebar'],
+                components: [
+                    'amp-video',
+                    'amp-carousel',
+                    'amp-sidebar',
+                    'amp-animation',
+                    'amp-position-observer',
+                ],
                 pathIdentifier: '/',
                 relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
                 useAmpClientIdApi: true,
             },
         },
         'gatsby-plugin-styled-components',
-        {
-            resolve: 'gatsby-plugin-anchor-links',
-            options: {
-                offset: -100,
-            },
-        },
         `gatsby-plugin-offline`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
