@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import Container from 'components/container'
 import Box from 'components/box'
 import Flex from 'components/flex'
@@ -10,18 +10,6 @@ import signupUrl from 'utils/signup-url'
 import HeroImg from 'assets/images/hero-image.jpg'
 import HeroPlatform from 'assets/images/hero-platform.png'
 import CheckIcon from 'assets/svg/checklist.svg'
-
-const float = keyframes`
-    0% {
-		transform: translatey(15px);
-    }
-    50% {
-		transform: translatey(40px);
-	}
-	100% {
-		transform: translatey(15px);
-	}
-`
 
 const BigButton = styled(LinkButton)`
     padding: 1.6rem 2.4rem;
@@ -38,6 +26,7 @@ const HandleAmp = styled(Box)`
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
+    padding: 14rem 0 10rem;
 
     &::before {
         content: '';
@@ -46,7 +35,7 @@ const HandleAmp = styled(Box)`
         height: 100%;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.8);
     }
     ${Header} {
         color: white;
@@ -59,15 +48,13 @@ const HandleAmp = styled(Box)`
 const FullWidth = styled(Container)`
     height: 100%;
     width: 100%;
-    min-height: 58.7rem;
     margin-bottom: 2.4rem;
 
     & > * {
         margin: 1rem;
     }
     & > amp-img {
-        animation: ${float} 3s ease-in-out infinite;
-
+        margin-top: 5rem;
         @media ${device.tabletS} {
             display: none;
         }

@@ -31,7 +31,7 @@ const LinkText = styled(AnchorLink)`
     font-size: var(--text-size-s);
     color: var(--color-white);
     text-decoration: none;
-    font-weight: bold;
+    letter-spacing: 0.1rem;
     cursor: pointer;
     margin: 0 2.4rem;
     transition: color 0.25s;
