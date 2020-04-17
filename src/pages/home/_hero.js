@@ -6,7 +6,7 @@ import Flex from 'components/flex'
 import { LinkButton } from 'components/button'
 import { Text, Header } from 'components/typography'
 import signupUrl from 'utils/signup-url'
-import HeroImg from 'assets/images/hero-image.png'
+import HeroImg from 'assets/images/hero-image.jpg'
 import CheckIcon from 'assets/svg/checklist.svg'
 
 const float = keyframes`
@@ -31,8 +31,7 @@ const BigButton = styled(LinkButton)`
 
 const HandleAmp = styled(Box)`
     background: url(${HeroImg});
-    background-size: 98%;
-    background-position: 50% 45%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
