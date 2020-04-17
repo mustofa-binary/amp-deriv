@@ -12,6 +12,11 @@ import SimpleStepIcon1 from 'assets/svg/simple-steps-1.svg'
 import SimpleStepIcon2 from 'assets/svg/simple-steps-2.svg'
 import SimpleStepIcon3 from 'assets/svg/simple-steps-3.svg'
 
+const MediumButton = styled(LinkButton)`
+    font-size: var(--text-size-sm);
+    font-weight: normal;
+`
+
 const HandleAmp = styled(Box)`
     position: relative;
     width: 100%;
@@ -78,7 +83,7 @@ const SimpleSteps = () => {
                         </Text>
                     </Li>
                 </Ul>
-                <LinkButton
+                <MediumButton
                     href={signupUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -86,7 +91,7 @@ const SimpleSteps = () => {
                     mt="4rem"
                 >
                     Sign up now
-                </LinkButton>
+                </MediumButton>
             </Container>
         </HandleAmp>
     )
