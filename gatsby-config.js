@@ -44,7 +44,7 @@ module.exports = {
                         },
                     },
                 },
-                canonicalBaseUrl: 'http://amp-deriv.netlify.com/',
+                canonicalBaseUrl: 'https://deriv.com/',
                 components: ['amp-video', 'amp-carousel', 'amp-sidebar'],
                 pathIdentifier: '/',
                 relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
