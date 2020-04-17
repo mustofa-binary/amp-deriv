@@ -24,9 +24,28 @@ const float = keyframes`
 	}
 `
 
-const HandleAmp = styled(Box)`
-    width: 100%;
+const BigButton = styled(LinkButton)`
+    padding: 1.6rem 2.4rem;
+    font-size: 1.8rem;
+`
 
+const HandleAmp = styled(Box)`
+    background: url(${HeroImg});
+    background-size: 98%;
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
     ${Header} {
         color: white;
     }
@@ -37,6 +56,7 @@ const HandleAmp = styled(Box)`
 
 const FullWidth = styled(Container)`
     height: 100%;
+    width: 100%;
     min-height: 58.7rem;
 
     & > amp-img {
@@ -80,7 +100,7 @@ const Hero = () => {
                             24x7 trading, sharp prices, tight spreads
                         </Text>
                     </Flex>
-                    <LinkButton
+                    <BigButton
                         primary
                         href={signupUrl()}
                         mt="3.2rem"
@@ -88,9 +108,8 @@ const Hero = () => {
                         rel="noopener noreferrer"
                     >
                         Create free demo account
-                    </LinkButton>
+                    </BigButton>
                 </Box>
-                <amp-img src={HeroImg} width="52rem" height="30rem" />
             </FullWidth>
 
             {/* <amp-video width="100vw" height="82.7rem" autoplay="" loop="">
