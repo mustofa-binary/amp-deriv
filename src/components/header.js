@@ -97,15 +97,9 @@ const Header = () => (
                     </Binary>
                 </Flex>
                 <LinkWrapper alignItems="center" justifyContent="center">
-                    <LinkText to="/#trade" stripHash>
-                        Trade
-                    </LinkText>
-                    <LinkText to="/#markets" stripHash>
-                        Markets
-                    </LinkText>
-                    <LinkText to="/#our-clients" stripHash>
-                        Testimonials
-                    </LinkText>
+                    <LinkText to="/#trade">Trade</LinkText>
+                    <LinkText to="/#markets">Markets</LinkText>
+                    <LinkText to="/#our-clients">Testimonials</LinkText>
                 </LinkWrapper>
                 <HamburgerMenu on="tap:sidebar1.toggle">
                     <amp-img src={Hamburger} width="18" height="16" />
