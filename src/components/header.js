@@ -97,13 +97,13 @@ const Header = () => (
                     </Binary>
                 </Flex>
                 <LinkWrapper alignItems="center" justifyContent="center">
-                    <LinkText to="#trade" stripHash>
+                    <LinkText to="/#trade" stripHash>
                         Trade
                     </LinkText>
-                    <LinkText to="#markets" stripHash>
+                    <LinkText to="/#markets" stripHash>
                         Markets
                     </LinkText>
-                    <LinkText to="#our-clients" stripHash>
+                    <LinkText to="/#our-clients" stripHash>
                         Testimonials
                     </LinkText>
                 </LinkWrapper>
