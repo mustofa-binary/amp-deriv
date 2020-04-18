@@ -33,42 +33,51 @@ const ScrollTop = () => {
                 ></amp-position-observer>
             </div>
             <amp-animation id="showAnim" layout="nodisplay">
-                <script type="application/json">{`
-        {
-          "duration": "200ms",
-          "fill": "both",
-          "iterations": "1",
-          "direction": "alternate",
-          "animations": [
-            {
-              "selector": "#scrollToTopButton",
-              "keyframes": [
-                { "opacity": "1", "visibility": "visible" }
-              ]
-            }
-          ]
-        }
-      `}</script>
+                <script
+                    type="application/json"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        {
+                          "duration": "200ms",
+                          "fill": "both",
+                          "iterations": "1",
+                          "direction": "alternate",
+                          "animations": [
+                            {
+                              "selector": "#scrollToTopButton",
+                              "keyframes": [
+                                { "opacity": "1", "visibility": "visible" }
+                              ]
+                            }
+                          ]
+                        }
+                
+                `,
+                    }}
+                />
             </amp-animation>
             <amp-animation id="hideAnim" layout="nodisplay">
-                <script type="application/json">
-                    {`
-        {
-          "duration": "200ms",
-          "fill": "both",
-          "iterations": "1",
-          "direction": "alternate",
-          "animations": [
-            {
-              "selector": "#scrollToTopButton",
-              "keyframes": [
-                { "opacity": "0", "visibility": "hidden" }
-              ]
-            }
-          ]
-        }
-      `}
-                </script>
+                <script
+                    type="application/json"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        {
+                          "duration": "200ms",
+                          "fill": "both",
+                          "iterations": "1",
+                          "direction": "alternate",
+                          "animations": [
+                            {
+                              "selector": "#scrollToTopButton",
+                              "keyframes": [
+                                { "opacity": "0", "visibility": "hidden" }
+                              ]
+                            }
+                          ]
+                        }
+                `,
+                    }}
+                />
             </amp-animation>
             <ScrollTopBtn id="scrollToTopButton" on="tap:top.scrollTo()">
                 <amp-img src={Chevron} width="16" height="16" />
