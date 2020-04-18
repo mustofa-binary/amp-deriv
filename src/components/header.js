@@ -21,6 +21,8 @@ const HeaderWrapper = styled.header`
 const HamburgerMenu = styled.button`
     cursor: pointer;
     display: none;
+    border: none;
+    background: none;
     @media ${device.tabletL} {
         display: block;
         cursor: pointer;
