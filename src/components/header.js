@@ -45,7 +45,8 @@ const LinkText = styled(Link)`
 
 const BlackLink = styled(LinkText)`
     color: var(--color-black);
-    margin: 1.6rem 0;
+    margin: 1.6rem 2rem;
+    font-size: var(--text-size-m);
 `
 
 const Binary = styled(Text)`
@@ -121,9 +122,15 @@ const Header = () => (
                 p="2rem 2rem"
                 flexDirection="column"
             >
-                <BlackLink to="/#trade">Trade</BlackLink>
-                <BlackLink to="/#markets">Markets</BlackLink>
-                <BlackLink to="/#our-clients">Testimonials</BlackLink>
+                <BlackLink to="/#trade" on="tap:trade.scrollTo()">
+                    Trade
+                </BlackLink>
+                <BlackLink to="/#markets" on="tap:markets.scrollTo()">
+                    Markets
+                </BlackLink>
+                <BlackLink to="/#our-clients" on="tap:our-clients.scrollTo()">
+                    Testimonials
+                </BlackLink>
             </Flex>
         </amp-sidebar>
     </>
