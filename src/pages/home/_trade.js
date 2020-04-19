@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Box from 'components/box'
 import Flex from 'components/flex'
 import Container from 'components/container'
-import { Text, Header, LinkText } from 'components/typography'
+import { Text, Header } from 'components/typography'
 import Dtrader from 'assets/images/dtrader-trade.png'
 import Dbot from 'assets/images/dbot-trade.png'
 import Dmt5 from 'assets/images/dmt5-trade.png'
@@ -17,11 +17,6 @@ const FullWidth = styled(Box)`
 
 const Gradient = styled(Box)`
     background-image: linear-gradient(var(--color-grey-2), #ffffff);
-`
-
-const A = styled(LinkText)`
-    font-size: var(--text-size-m);
-    font-weight: bold;
 `
 
 const Card = styled(Flex)`
@@ -103,14 +98,7 @@ const Trade = () => {
                                 <amp-img src={DtraderIcon} width="72" height="72" />
                             </div>
                             <Box ml="1.6rem">
-                                <A
-                                    as="h4"
-                                    href="https://deriv.com/dtrader"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Dtrader
-                                </A>
+                                <Header as="h4">Dtrader</Header>
                                 <Text weight="300">
                                     The platform to start with. It’s powerful yet easy to use.
                                 </Text>
@@ -128,14 +116,7 @@ const Trade = () => {
                                 <amp-img src={DbotIcon} width="72" height="72" />
                             </div>
                             <Box ml="1.6rem">
-                                <A
-                                    as="h4"
-                                    href="https://deriv.com/dbot"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    DBot
-                                </A>
+                                <Header as="h4">DBot</Header>
                                 <Text weight="300">
                                     Automated trading at your fingertips. No coding needed.
                                 </Text>
@@ -152,14 +133,7 @@ const Trade = () => {
                                 <amp-img src={Dmt5Icon} width="72" height="72" />
                             </div>
                             <Box ml="1.6rem">
-                                <A
-                                    as="h4"
-                                    href="https://deriv.com/dmt5"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    DMT5
-                                </A>
+                                <Header as="h4">DMT5</Header>
                                 <Text weight="300">
                                     The platform of choice for professionals worldwide.
                                 </Text>
